@@ -4,7 +4,7 @@ pipeline {
     stage('get tfs') {
       steps {
         echo 'first stage '
-        bat 'Set-Alias tf "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\tf.exe"  '
+        powershell 'Set-Alias tf "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\tf.exe"'
       }
     }
 
